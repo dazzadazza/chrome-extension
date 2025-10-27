@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mock Nextdoor Feed</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      margin: 0;
+      padding: 20px;
+    }
+    .feed {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    article.post {
+      background: #fff;
+      padding: 16px;
+      margin-bottom: 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+    article.post h2 {
+      margin-top: 0;
+    }
+    .permalink {
+      display: inline-block;
+      margin-top: 12px;
+      color: #1976d2;
+    }
+  </style>
+</head>
+<body>
+  <div class="feed">
+    <h1>Mock Nextdoor Feed</h1>
+
+    <article class="post" data-testid="post">
+      <h2>Looking for a plumber</h2>
+      <p>Hi neighbours! We're looking for a reliable plumber near LE11 who can fix a leaking tap.</p>
+      <a class="permalink" href="http://localhost/mock/p/123">Open</a>
+    </article>
+
+    <article class="post" data-testid="post">
+      <h2>Community Watch Update</h2>
+      <p>There was a suspicious vehicle spotted on Elm Street last night. Please stay alert.</p>
+      <a class="permalink" href="http://localhost/mock/p/124">Open</a>
+    </article>
+
+    <article class="post" data-testid="post">
+      <h2>Lost cat</h2>
+      <p>Our beloved tabby cat, Whiskers, has gone missing. Last seen near the High Street wearing a blue collar.</p>
+      <a class="permalink" href="http://localhost/mock/p/125">Open</a>
+    </article>
+
+    <article class="post" data-testid="post">
+      <h2>Free garden furniture</h2>
+      <p>Giving away a set of wooden garden chairs. First come, first served!</p>
+      <a class="permalink" href="http://localhost/mock/p/126">Open</a>
+    </article>
+  </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nextdoor Keyword Notifier Options</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Nextdoor Keyword Notifier</h1>
+    <form id="options-form">
+      <label for="keywords">Keywords (one per line):</label>
+      <textarea id="keywords" rows="10" placeholder="plumber&#10;/lost cat/&#10;electrician"></textarea>
+
+      <label class="checkbox">
+        <input type="checkbox" id="debugOverlay" />
+        <span>Enable debug overlay</span>
+      </label>
+
+      <div class="actions">
+        <button type="submit" id="save">Save</button>
+        <button type="button" id="test">Test Notification</button>
+      </div>
+      <p class="help">Regex keywords must be wrapped in slashes, e.g. <code>/lost\s+cat/</code>.</p>
+    </form>
+  </main>
+  <script src="options.js"></script>
+</body>
+</html>
